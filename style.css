@@ -1,0 +1,126 @@
+/* basic styling to make the links bigger */
+
+html,body {
+  margin:0;
+  padding:0;
+  scroll-behavior: smooth;
+}
+
+#navigation {
+  display: flex;
+  /* make the navbar alway stay on top */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+#navigation span {
+  flex-grow: 1;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navigation span a {
+  display: inline-block;
+}
+
+/* when a link is clicked, it gets highlighted */
+/* .highlighted {
+  color: red;
+} */
+
+a {
+  color: #000000;
+  text-decoration: none;
+  text-decoration-color: #000000;
+}
+a :hover {
+  color: royalblue;
+}
+/* make each section taller and give them different colors */
+#content {
+  margin-top: 5vh;
+}
+
+#content div {
+  height: 100%;
+}
+
+#section_home {
+  background-color: aliceblue;
+  height: 100%
+}
+
+#section_about {
+  background-color: ghostwhite;
+}
+
+#section_projects {
+  background-color: aliceblue;
+}
+
+#section_professional {
+  background-color: ghostwhite;
+}
+
+.sec1vert {
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sec1horiz {
+  flex: 1;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.imageProfile {
+  width: 300px;
+  /* height: 300px; */
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.homecontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.para {
+  font-size: 15px;
+}
+
+.socialicons {
+  height: 20px;
+  padding-right: 7px;
+}
+
+
+.projname {
+  width:30%;
+  height: 60%;
+  margin-right:10%;
+  float: left;
+}
+
+.projdescription {
+  width:42%;
+  float: left;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+.active{
+	color: red;
+	background-color: rgba(100,100,100,1);
+	border-left: thick solid rgba(0,255,0,0.5);
+}
