@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="./images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,21 +19,21 @@
     <!-- navigation -->
     <div id="navigation">
       <span>
-        <a href="#home"  style="color: black;">
+        <a href="#home"  style="color: black;" class="links">
           <h6>HOME</h6>
         </a>
       </span>
       <span>
-        <a href="#about"  style="color: black;">
+        <a href="#about"  style="color: black;" class="links">
           <h6>ABOUT</h6>
         </a></span>
-      <span><a href="#projects"  style="color: black;">
+      <span><a href="#projects"  style="color: black;" class="links">
           <h6>PROJECTS</h6>
         </a></span>
       <!-- <span><a href="#professional"  style="color: black;">
           <h6>PROFESSIONAL</h6>
         </a></span> -->
-      <span><a href="https://drive.google.com/file/d/1PBGF2193CI2iMHnrcwfl9xcXELR9FUo4/view?usp=sharing" target="_blank"  style="color: black;">
+      <span><a class="links" href="https://drive.google.com/file/d/1PBGF2193CI2iMHnrcwfl9xcXELR9FUo4/view?usp=sharing" target="_blank"  style="color: black;">
           <h6>RESUME</h6>
         </a></span>
     </div>
@@ -41,7 +42,7 @@
       <div id="section_home" class="sec1vert homecontent page">
           <!-- <div class="sec1horiz"> -->
           <img src="./images/cover_picture.png" class="center imageProfile"/>
-          <h1 style="font-size: 75px; /*line-height: 0;*/">VISHAL DUBEY</h1>
+          <h1 style="font-size: 6vw; /*line-height: 0;*/">VISHAL DUBEY</h1>
           <h5 style="/* line-height: 0; */ padding-bottom: 0%;">Student, Software Engineer, Food Enthusiast</h5>
           <div style="padding-top: 10px; padding-bottom: 50px;">
             <a href="https://www.linkedin.com/in/vishaldubey01/" style="text-decoration: none;" target="_blank">
@@ -62,6 +63,9 @@
             <a href="https://www.facebook.com/profile.php?id=100014006790763" style="text-decoration: none;" target="_blank">
               <img src="./images/facebook.svg" class="socialicons"/>
             </a>
+            <a href="https://drive.google.com/file/d/1PBGF2193CI2iMHnrcwfl9xcXELR9FUo4/view?usp=sharing" style="text-decoration: none;" target="_blank">
+              <img src="./images/resume-and-cv.svg" class="socialicons"/>
+            </a>
           </div>
           <!-- </div> -->
           <a href="#section_about" style="padding-bottom: 5%;">
@@ -72,47 +76,51 @@
       
       <div id="section_about" class="sec1vert page">
         <div class="sec1vert" style="padding: 10% 25% 10% 25%;">
-          <h2>Hi, I'm Vishal!</h2>
+          <h2 class="underline--magical">Hi, I'm Vishal!</h2>
           <div class="para">
-            <p>I'm from Orlando, FL and I currently study Computer Science and Statistics at Duke University. I'm really interested in driving impactful change through data and tech in the financial services and healthcare industries. </p>
-            <p>I became passionate about tech when I matriculated to Duke and saw a job posting looking for an iOS engineer. Not knowing any Swift, I began building my technical skills and eventually worked there.
-              Since then, I've pursued various entrepreneurial endeavours and am always on the hunt for more exciting new projects to take on.</p>
-            <p>On campus, I'm part of the Executive team of the Duke Applied Machine Learning Group and am a Consulting Analyst at the Duke Impact Investing Group.
+            <p>I'm from Orlando, FL, and I'm a student at <a href="https://duke.edu/">Duke University</a> studying Computer Science and Statistics. Currently, I'm working as a Software Engineer at <a href="https://www.ivella.co/">Ivella</a>, an early-stage fintech startup.
+              I'm really interested in driving impactful change through data and tech in the financial services and healthcare industries.
+            </p>
+            <p>
+              From my prior experiences at various biotech startups, I found a passion for entrepreneurship and impact, while also having grown my own technical software engineering skills.  
+              Last summer, I followed this passion while interning at <a href="https://www.optum.com/">UnitedHealth Group</a> where I constructed a nationwide drug shortage platform for data visualization and recommendations. For more, check out my <a href="https://drive.google.com/file/d/1PBGF2193CI2iMHnrcwfl9xcXELR9FUo4/view?usp=sharing">resume</a>!</p>
+            <p>On campus, I'm part of the Executive team of the <a href="https://www.dukeaml.com/">Duke Applied Machine Learning Group</a>, where I help coordinate events and meetings for over 100 students, and am a Consulting Analyst at the <a href="https://www.dukeimpact.org/">Duke Impact Investing Group</a>, where I research impact metrics for a disaster-preparedness <a href="https://needslist.co/">NGO</a> and an impact-focused <a href="https://newstory.co/">Venture Fund</a>.
               I'm also a part of other entrepreneurship and business-related groups as well such as the Student Founders program.</p>
             <p>Fun fact about me: a friend and I once 'cracked' the Subway receipt cookie code algorithm in middle school and got a thousand free cookies 🍪.
               Some of my interests include sustainability, politics, martial arts, and gluten-free cooking. I'm also a fan of the Orlando Magic and Duke Basketball! </p>
+            <p>Reach out to me on <a href="https://www.linkedin.com/in/vishaldubey01/">LinkedIn</a> or through <a href="mailto:vdubey01@gmail.com">Email</a>!</p>
           </div>
         </div>
       </div>
 
       <div id="section_projects" class="sec1vert homecontent page">
-        <div style="padding: 5% 20% 0% 20%;">
-          <h2 style="padding-left: 5%;">Selected Projects</h2>
+        <div style="padding: 5% 25% 0% 25%; padding-bottom: 5%;">
+          <h2 class="underline--magical">Selected Projects</h2>
 
-          <div style="padding: 5%;">
-            <div class="projname" style="padding-bottom: 250px;">
+          <div id="gallery-text">
+            <div class="gallery-text-name">
                 <h5>Environmental Hazard Reporting App</h5>
                 <p>February 2020</p>
                 <a class="projlink" href="https://github.com/vishaldubey01/QuickReport">
                   <p>Github</p>
                 </a>
             </div>
-            <div class="para" class="projdescription">
+            <div class="gallery-text para">
               <p>I led a team of 4 to create an automated system detect and report environmental hazards. The need for this app came as we observed litter, fallen trees, and cracked sidewalks in the streets of Arlington, VA. I built an iOS front-end app in Swift with a back-end RESTful API in Flask, and an administrator dashboard in React JS. One notable feature I implemented was web automation with convolutional neural networks on Google Cloud platform, allowing for the images taken to be processed and correctly sorted by hazard type.</p>
               <p>This project was build for HoyaHacks 2020 at Georgetown University and ended up winning 2nd place. Following the competition, I began talks with Arlington City officials to implement this app within their Parks and Recreation department.</p>
               <p>Technologies Used: Swift, Python, React, Google Cloud</p>
             </div>
           </div>
 
-          <div style="padding: 5%;">
-            <div class="projname" style="padding-bottom: 120px;">
+          <div id="gallery-text">
+            <div class="gallery-text-name">
                 <h5>Article Analysis Platform</h5>
                 <p>October 2019</p>
                 <a href="https://github.com/vishaldubey01/Article-Analysis">
                   <p>Github</p>
                 </a>
             </div>
-            <div class="para" class="projdescription">
+            <div class="gallery-text para">
               <p>I built a platform to optimize the relevance rankings of news articles scraped from New York Times.
                 This was done through building a RESTful API with a server-side multi-label classifier for NLP based on convolutional neural networks.
                 My project ultimately won me the HackNC ‘Best Use of Data Analytics’ out of more than 100 teams.</p>
@@ -120,15 +128,15 @@
             </div>
           </div>
 
-          <div style="padding: 5%;">
-            <div class="projname" style="padding-bottom: 170px;">
+          <div id="gallery-text">
+            <div class="gallery-text-name">
                 <h5>NFL Fantasy Points Predictor Model</h5>
                 <p>Aug. 2019 - Dec. 2019</p>
                 <a href="https://github.com/vishaldubey01/NFLFootballPredictorModel">
                   <p>Github</p>
                 </a>
             </div>
-            <div class="para" class="projdescription">
+            <div class="gallery-text para">
               <p>As part of my Fall 2019 class "Machine Learning and Computational Modeling," I created a predictor model for fantasy points of NFL players in the past 20 years based on college season and NFL Combine statistics.
                 To do this, I applied regularization and bootstrap regression in Scikit-learn using BeautifulSoup and Selenium for automated data scraping. I evaluated model efficacy using Mean Squared Error and also implemented PCA (Principal Component Analysis) in the process to select from over 100 input variables.
                 </p>
