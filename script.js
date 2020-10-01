@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const listOfLinks = [
       document.querySelector("a[href^='#home"),
       document.querySelector("a[href^='#about"),
-      document.querySelector("a[href^='#projects"),
-      //document.querySelector("a[href^='#professional")
+      document.querySelector("a[href^='#life"),
+      document.querySelector("a[href^='#projects")
     ];
     
     //const listOfLinks = document.querySelectorAll("a[href^='#sectionLink");
@@ -60,6 +60,38 @@ document.addEventListener("DOMContentLoaded", () => {
     changeLinkState();
     window.addEventListener('scroll', changeLinkState);
     
+
+
+
+
+    // var slideIndex = 1;
+    // showSlides(slideIndex);
+
+    // // Next/previous controls
+    // function plusSlides(n) {
+    //   showSlides(slideIndex += n);
+    // }
+
+    // // Thumbnail image controls
+    // function currentSlide(n) {
+    //   showSlides(slideIndex = n);
+    // }
+
+    // function showSlides(n) {
+    //   var i;
+    //   var slides = document.getElementsByClassName("mySlides");
+    //   var dots = document.getElementsByClassName("dot");
+    //   if (n > slides.length) {slideIndex = 1}
+    //   if (n < 1) {slideIndex = slides.length}
+    //   for (i = 0; i < slides.length; i++) {
+    //       slides[i].style.display = "none";
+    //   }
+    //   for (i = 0; i < dots.length; i++) {
+    //       dots[i].className = dots[i].className.replace(" slideactive", "");
+    //   }
+    //   slides[slideIndex-1].style.display = "block";
+    //   dots[slideIndex-1].className += " slideactive";
+    // }
 });
 
 
