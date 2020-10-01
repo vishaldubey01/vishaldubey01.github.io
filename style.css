@@ -101,7 +101,7 @@ a:hover {
 .imageProfile {
   width: 300px;
   /* height: 300px; */
-  padding-top: 5%;
+  padding-top: 4%;
   padding-bottom: 3%;
 }
 
@@ -236,6 +236,13 @@ a:hover {
     padding: 50px;
     padding-bottom: 0%;
     padding-top: 0%;
+  }
+
+  .imageProfile {
+    width: 200px;
+    /* height: 300px; */
+    padding-top: 5%;
+    padding-bottom: 3%;
   }
 }
 
