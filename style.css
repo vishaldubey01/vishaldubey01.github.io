@@ -6,7 +6,8 @@ html,body {
   scroll-behavior: smooth;
 }
 ul {
-  list-style-position: inside;
+  list-style-position: outside !important;
+  list-style-type: disc !important;
 }
 
 #navigation {
@@ -37,13 +38,36 @@ ul {
 } */
 
 a {
-  color: royalblue;
+ color: royalblue;
   text-decoration: none;
   text-decoration-color: #000000;
 }
-a:hover {
-  color: #ff0000;
+
+a.under {
+  background-image: linear-gradient(120deg, rgb(68, 186, 255) 0%, #00d1a4 100%);
+  color: #000000;
+  text-decoration: none;
+  text-decoration-color: #000000;
+  background-repeat: no-repeat;
+  background-size: 100% 0.25em;
+  background-position: 0 95%;
 }
+a.under:hover {
+  color: rgb(62, 130, 255);
+}
+a.under-project {
+  background-image: linear-gradient(120deg, rgb(0, 45, 129) 0%, rgb(62, 130, 255) 100%);
+  color: #000000;
+  text-decoration: none;
+  text-decoration-color: #000000;
+  background-repeat: no-repeat;
+  background-size: 100% 0.17em;
+  background-position: 0 95%;
+}
+a.under-project:hover {
+  color: rgb(62, 130, 255);
+}
+
 
 #navigation a.links {
   transition: background-image 1s;
@@ -76,13 +100,31 @@ a:hover {
 #section_about {
   background-color: ghostwhite;
 }
+.about-padding {
+  padding: 10% 25% 10% 25%;
+}
 
 #section_life {
   background-color: aliceblue;
 }
+.life-padding {
+  padding: 5% 25% 10% 25%;
+}
 
 #section_projects {
   background-color: ghostwhite;
+}
+.projects-padding {
+  padding: 5% 25% 0% 25%;
+  padding-bottom: 5%;
+}
+
+#section_professional {
+  background-color: aliceblue;
+}
+.professional-padding {
+  padding: 5% 25% 0% 25%;
+  padding-bottom: 5%;
 }
 
 
@@ -101,8 +143,12 @@ a:hover {
 .imageProfile {
   width: 300px;
   /* height: 300px; */
-  padding-top: 4%;
+  padding-top: 5%;
   padding-bottom: 3%;
+}
+
+.title-name {
+  font-size: 6vw; /*line-height: 0;*/
 }
 
 .homecontent {
@@ -111,12 +157,18 @@ a:hover {
   align-items: center;
 }
 
+.professionalcontent {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
 .para {
   font-size: 15px;
 }
 
 .socialicons {
-  height: 20px;
+  height: 23px;
   padding-right: 7px;
   transition: transform .2s;
 }
@@ -164,16 +216,27 @@ a:hover {
 
 .gallery-text-name {
   float: left;
-  width: 38%;
+  width: 30%;
   margin: 1%;
   margin-left: 0%;
 }
 .gallery-text {
   float: left;
-  width: 58%;
+  width: 66%;
   margin: 1%;
 }
 
+.work-text-name {
+  float: left;
+  width: 28%;
+  margin: 1%;
+  margin-left: 0%;
+}
+.work-text {
+  float: left;
+  width: 68%;
+  margin: 1%;
+}
 
 .spotify-player {
   float: left;
@@ -199,6 +262,13 @@ a:hover {
   width: 33.33%;
   padding: 5px;
   text-align: center;
+  transition: transform .2s;
+}
+
+.piccolumn:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
 
 /* Clearfix (clear floats) */
@@ -208,17 +278,38 @@ a:hover {
   display: table;
 }
 
+.lg-view-projects-header {
+  display:inline-block;
+}
+.sm-view-projects-header {
+  display: none;
+}
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .lg-view-projects-header {
+    display:none;
+  }
+  .sm-view-projects-header {
+    display: inline-block;
+  }
   .gallery-text-name {
+    padding-bottom: 0;
     width: 100%;
   }
   .gallery-text {
+    padding-top: 0;
     width: 100%;
   }
   h5 {
     font-weight: bolder;
+  }
+
+  .work-text-name {
+    width: 100%;
+  }
+  .work-text {
+    width: 100%;
   }
 
   .spotify-player {
@@ -239,10 +330,38 @@ a:hover {
   }
 
   .imageProfile {
-    width: 200px;
+    width: 300px;
     /* height: 300px; */
-    padding-top: 5%;
-    padding-bottom: 3%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+  .about-padding {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 15%;
+  }
+  .life-padding {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 15%;
+  }
+  .projects-padding {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 15%;
+  }
+  .title-name {
+    font-size: 10vw;
+  }
+  .downarrow {
+    padding-top: 17%;
+    padding-bottom: 15%;
+  }
+  .socialicons {
+    height: 25px;
+  }
+  #section_home {
+    padding-bottom: 200px;
   }
 }
 

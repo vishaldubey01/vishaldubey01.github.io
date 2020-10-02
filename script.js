@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
     const listOfLinks = [
-      document.querySelector("a[href^='#home"),
+      document.querySelector("a[href^='#"),
       document.querySelector("a[href^='#about"),
       document.querySelector("a[href^='#life"),
-      document.querySelector("a[href^='#projects")
+      document.querySelector("a[href^='#projects"),
+      document.querySelector("a[href^='#professional")
     ];
     
     //const listOfLinks = document.querySelectorAll("a[href^='#sectionLink");
@@ -25,7 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
         link.classList.add('highlighted');
         // get the element where to scroll
         let ref = link.href.split('#');
-        ref = "#section_" + ref[1];
+        console.log(ref);
+        if(ref[1]!="") {
+          ref = "#section_" + ref[1];
+        } else {
+          ref="#content";
+        }
+        console.log(ref);
         // ie 11 does not support smooth scroll, so we will simply scroll
         if (isIE11) {
           setTimeout(function() {
@@ -46,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const links = document.querySelectorAll('.links');
     const sections = document.querySelectorAll('.page');
-    console.log(sections);
     function changeLinkState() {
       let index = sections.length;
 
@@ -54,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
       
       links.forEach((link) => link.classList.remove('active'));
       links[index].classList.add('active');
-      console.log('hi');
     }
 
     changeLinkState();
